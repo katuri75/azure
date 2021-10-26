@@ -1,5 +1,6 @@
 firewall-cmd --add-service=http --permanent
 firewall-cmd --reload
+setenforce 0
 mkdir /etc/www
 hostname > /etc/www/index.html
 hostname > /etc/www/hostname.txt
